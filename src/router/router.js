@@ -55,6 +55,12 @@ const routes = [
                 name: 'dbz-characters',
                 component: () => import(/* webpackChunkName: "Characters" */ '../modules/dbz/pages/Characters')
             },
+            {
+                path:'',
+                redirect: {
+                    name: 'dbz-characters'
+                }
+            }
         ]
     },
     {
